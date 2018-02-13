@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <title>My family</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body> 
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Me</a>
+  <a href="activities.html">Activites</a>
+  <a href="family.html">Family</a>
+  <a href="friends.html">Friends</a>
+  <a href="school.html">School</a>
+</div>
+
+<div id="main">
+    
+  <h2>My friends</h2>
+    <img src="friends.png" alt="friends">
+    <img src="friends3.png" alt="friends">
+    <p>These are my friends</p>
+        
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
+</body>
+</html>
